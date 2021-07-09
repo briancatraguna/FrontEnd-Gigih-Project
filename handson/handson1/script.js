@@ -22,4 +22,5 @@ function calcAverage(){
     let averageText = document.getElementById("aveResult");
     let result = totalAge/students.length
     averageText.innerHTML = result
+    console.log(result);
 }
