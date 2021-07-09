@@ -7,4 +7,11 @@ const students = [
 
 let table = document.getElementById("myTable");
 
-console.log(table);
+students.forEach((item,index)=>{
+    let newRow = table.insertRow(-1);
+    let cell1 = newRow.insertCell(0);
+    let cell2 = newRow.insertCell(1);
+
+    cell1.innerHTML = item.name;
+    cell2.innerHTML = item.age;
+})
