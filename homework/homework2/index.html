@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html>
 <header>
-
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
     <meta charset="utf-8">
     <title>My Playlists</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
 </header>
 
@@ -21,13 +23,13 @@
     </form>
 
     <div class='myDiv'>
-        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/NS-WKMAG0730-1595944356.jpg" width=400px>
-        <p class='text'>Track title</p>
-        <p class='text'>Artists</p>
-        <p class='text'>Albums</p>
+        <img alt="" srcset="" width=400px id="imageAlbum"/>
+        <p class='text' id="trackTitle">Track title</p>
+        <p class='text' id="artists">Artists</p>
+        <p class='text' id="albums">Albums</p>
         <input type='button' value='Select'>
     </div>
-
+    
 </body>
 
 </html>
