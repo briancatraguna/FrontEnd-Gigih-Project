@@ -6,6 +6,7 @@ const students = [
 ];
 
 let table = document.getElementById("myTable");
+let totalAge = 0
 
 students.forEach((item,index)=>{
     let newRow = table.insertRow(-1);
@@ -14,4 +15,11 @@ students.forEach((item,index)=>{
 
     cell1.innerHTML = item.name;
     cell2.innerHTML = item.age;
+    totalAge+=item.age;
 })
+
+function calcAverage(){
+    let averageText = document.getElementById("aveResult");
+    let result = totalAge/students.length
+    averageText.innerHTML = result
+}
